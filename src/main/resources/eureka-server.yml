@@ -1,0 +1,13 @@
+# Configure the eureka discovery server
+eureka:
+  instance:
+    hostname: localhost
+  client: # Not a client, don't register with yourself
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 8761
+  
+ 
